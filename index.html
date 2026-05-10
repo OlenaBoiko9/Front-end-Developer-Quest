@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Бойко Олена — Front-end Developer Quest</title>
+  <link rel="stylesheet" href="./style.css"> 
+</head>
+<body>
+  <div class="progress-wrap"><div class="progress" id="progress"></div></div>
+  <div class="bg-grid"></div>
+  <div class="stars"></div>
+  <div class="code-rain" id="particles"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="На старт"><span class="brand-dot"></span><span>Olena Boiko Quest CV</span></a>
+    <nav class="nav" aria-label="Навігація">
+      <button class="nav-btn active" data-target="0">Start</button>
+      <button class="nav-btn" data-target="1">About</button>
+      <button class="nav-btn" data-target="2">Skills</button>
+      <button class="nav-btn" data-target="3">Practice</button>
+      <button class="nav-btn" data-target="4">Projects</button>
+      <button class="nav-btn" data-target="5">Finish</button>
+    </nav>
+  </header>
+
+  <div class="runner" id="runner" aria-hidden="true">
+    <div class="avatar"><div class="hair"></div><div class="head"><div class="bangs"></div><div class="eye left"></div><div class="eye right"></div><div class="smile"></div></div><div class="body"></div><div class="arm left"></div><div class="arm right"></div><div class="leg left"></div><div class="leg right"></div></div>
+  </div>
+
+  <main class="game" id="game">
+    <section class="world" id="world">
+      <article class="level">
+        <div class="panel log-panel">
+          <div class="level-label">New Game — Frontend Quest</div>
+          <h1>Я — <span class="accent">Олена</span> Бойко</h1>
+          <p>Я Front-end Developer. Створюю сучасні, адаптивні та зручні інтерфейси за допомогою HTML, CSS, JavaScript і React.</p>
+          <div class="quest-log">
+            <div class="log-item">🎮 Main quest: потрапити в команду й працювати над реальними frontend-продуктами.</div>
+            <div class="log-item">⚡ Power stack: HTML, CSS, JavaScript, React, Git/GitHub.</div>
+            <div class="log-item">🤖 Bonus tool: використовую Cursor та AI-інструменти для швидшого навчання й кращого коду.</div>
+          </div>
+          <div class="actions">
+            <button data-next="1">Start Journey</button>
+            <a class="button" href="https://github.com/OlenaBoiko9" target="_blank" rel="noreferrer">GitHub Portal</a>
+            <a class="button" href="mailto:boiko.olena.2324ls@gmail.com">Send Message</a>
+          </div>
+        </div>
+        <div class="stage">
+          <div class="moon"></div>
+          <div class="platform"></div>
+        
+          <div class="coin coin-1"></div>
+          
+          <div class="badge badge-html">HTML</div>
+          <div class="badge badge-js">JS</div>
+          <div class="badge badge-css">CSS</div>
+          <div class="badge badge-react">React</div>
+          <div class="badge badge-github">GitHub</div>
+        </div>
+      </article>
+
+      <article class="level">
+        <div class="panel">
+          <div class="level-label">Quest 01 — Origin Story</div>
+          <h2>Мій шлях у <span class="accent">Frontend</span></h2>
+          <p>Я почала з бажання не лише верстати сторінки, а глибше розуміти створення зручних та сучасних інтерфейсів. Після курсу Frontend у Lemon School я отримала базу з HTML, CSS і JavaScript та перейшла до складніших задач: логіки, стану, архітектури й структури компонентів.</p>
+        </div>
+        <div class="cards">
+          <div class="card"><strong>🛡 Frontend foundation</strong>Я маю міцну базу HTML, CSS та JavaScript після навчання й практики.</div>
+          <div class="card"><strong>⚔ React growth</strong>Я активно розвиваюся в React, компонентах, props і state.</div>
+          <div class="card"><strong>🤖 AI workflow</strong>Я використовую Cursor та AI-інструменти, щоб швидше вчитися й покращувати код.</div>
+          <div class="card"><strong>🏁 Team ready</strong>Я готова працювати в команді над реальними frontend-продуктами.</div>
+        </div>
+      </article>
+
+      <article class="level">
+        <div class="panel">
+          <div class="level-label">Quest 02 — Collect Power-ups</div>
+          <h2>Мої <span class="accent">skills power-ups</span></h2>
+          <p>Натисни на навичку, щоб відкрити опис. React для мене — активна зона прокачки, а HTML/CSS/JS — основна бойова база.</p>
+        </div>
+       <div class="skills">
+  <div class="skill">
+    <div class="skill-head">
+      <span>HTML</span>
+    </div>
+    <div class="skill-desc">
+      Створюю семантичну, зрозумілу й акуратну структуру сторінки, яка легко читається та підтримується.
+    </div>
+  </div>
+
+  <div class="skill">
+    <div class="skill-head">
+      <span>CSS</span>
+    </div>
+    <div class="skill-desc">
+      Працюю з адаптивністю, візуальною стилізацією, сітками, відступами та деталями інтерфейсу.
+    </div>
+  </div>
+
+  <div class="skill">
+    <div class="skill-head">
+      <span>JavaScript</span>
+    </div>
+    <div class="skill-desc">
+      Додаю інтерактивність, працюю з подіями, DOM, логікою поведінки елементів і динамікою сторінки.
+    </div>
+  </div>
+
+  <div class="skill">
+    <div class="skill-head">
+      <span>React</span>
+    </div>
+    <div class="skill-desc">
+      Розвиваю навички створення інтерфейсів через компоненти, props, state та логіку застосунку.
+    </div>
+  </div>
+
+  <div class="skill">
+    <div class="skill-head">
+      <span>Git / GitHub</span>
+    </div>
+    <div class="skill-desc">
+      Використовую репозиторії, версіонування, GitHub Pages і базовий workflow для роботи з проєктами.
+    </div>
+  </div>
+</div>
+      </article>
+
+      <article class="level">
+        <div class="panel">
+          <div class="level-label">Quest 03 — Practice Map</div>
+          <h2>Від лендінгів до <span class="accent">React</span></h2>
+          <p>Мій практичний шлях — це карта розвитку: від верстки до логіки, стану, структури компонентів і роботи з GitHub.</p>
+        </div>
+        <div class="timeline">
+          <div class="step"><strong>Landing pages</strong>Я починала з практичних задач із верстки та структури сторінок.</div>
+          <div class="step"><strong>Responsive layout</strong>Я працюю над адаптивною подачею інтерфейсів для різних екранів.</div>
+          <div class="step"><strong>JavaScript logic</strong>Я додаю події, інтерактивність і базову frontend-логіку.</div>
+          <div class="step"><strong>Component structure</strong>Я переходжу до мислення через блоки, компоненти й стан.</div>
+          <div class="step"><strong>React development</strong>Я активно розвиваюся в React і компонентному підході.</div>
+          <div class="step"><strong>GitHub workflow</strong>Я використовую репозиторії та версіонування для роботи з кодом.</div>
+        </div>
+      </article>
+
+<article class="level projects-level">
+  <div class="projects-panel">
+    <div class="projects-label">Quest 04 — GitHub Portal</div>
+
+    <h2>Мої проєкти та <span class="accent">практика</span></h2>
+  </div>
+
+  <div class="projects-grid">
+    <div class="projects-card">
+      <strong>Positivus</strong>
+      Landing Page на HTML5, CSS3 та SCSS. Семантична верстка, адаптивний дизайн, Flexbox і Grid.
+      <div class="projects-card-links">
+        <a href="https://olenaboiko9.github.io/Positivus/" target="_blank" rel="noreferrer">Live</a>
+        <a href="https://github.com/OlenaBoiko9/Positivus" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+
+    <div class="projects-card">
+      <strong>CROSSFIT</strong>
+      Адаптивний landing page на HTML5 та CSS3. Верстка по макету, оптимізація стилів і адаптація під різні екрани.
+      <div class="projects-card-links">
+        <a href="https://olenaboiko9.github.io/CROSSFIT/" target="_blank" rel="noreferrer">Live</a>
+        <a href="https://github.com/OlenaBoiko9/CROSSFIT" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+
+    <div class="projects-card">
+      <strong>Marketing-agency</strong>
+      Лендінг для маркетингової агенції GrowthLab. Послуги, переваги, етапи роботи, тарифи, відгуки, FAQ та форма.
+      <div class="projects-card-links">
+        <a href="https://olenaboiko9.github.io/Marketing-agency/" target="_blank" rel="noreferrer">Live</a>
+        <a href="https://github.com/OlenaBoiko9/Marketing-agency" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+
+    <div class="projects-card">
+      <strong>Genius</strong>
+      Landing page для сучасної пекарні. Навігація, форма заявки, модальне вікно та адаптивна структура.
+      <div class="projects-card-links">
+        <a href="https://olenaboiko9.github.io/Genius/" target="_blank" rel="noreferrer">Live</a>
+        <a href="https://github.com/OlenaBoiko9/Genius" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+
+    <div class="projects-card">
+      <strong>Cloud</strong>
+      Landing Page з JavaScript. Додавання інтерактивності, робота з DOM, адаптивна верстка та SCSS.
+      <div class="projects-card-links">
+        <a href="https://olenaboiko9.github.io/Cloud/" target="_blank" rel="noreferrer">Live</a>
+        <a href="https://github.com/OlenaBoiko9/Cloud" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+
+    <div class="projects-card">
+      <strong>Landing</strong>
+      Адаптивний лендінг для ремонту побутової техніки. Hero, services, how it works, booking form та footer.
+      <div class="projects-card-links">
+        <a href="https://olenaboiko9.github.io/Landing-/" target="_blank" rel="noreferrer">Live</a>
+        <a href="https://github.com/OlenaBoiko9/Landing" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+
+    <div class="projects-card">
+      <strong>Front-End-Olena-Boiko</strong>
+      Лендінг для рок-гурту «Грим та Грім». Навігація, розклад концертів, форма зв’язку та адаптивність.
+      <div class="projects-card-links">
+        <a href="https://olenaboiko9.github.io/Front-End-Olena-Boiko/" target="_blank" rel="noreferrer">Live</a>
+        <a href="https://github.com/OlenaBoiko9/Front-End-Olena-Boiko" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+
+    <div class="projects-card">
+      <strong>RoadX</strong>
+      Автомобільний landing page на HTML5, SCSS та JavaScript. Сучасний візуальний стиль і базова інтерактивність.
+      <div class="projects-card-links">
+        <a href="https://github.com/OlenaBoiko9/RoadX" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+
+    <div class="projects-card">
+      <strong>todo-react</strong>
+      React Todo App на Vite. Компонентна структура, робота зі станом, додавання та керування задачами.
+      <div class="projects-card-links">
+        <a href="https://olenaboiko9.github.io/todo-react/" target="_blank" rel="noreferrer">Live</a>
+        <a href="https://github.com/OlenaBoiko9/todo-react" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+
+    <div class="projects-card">
+      <strong>Arcadenova</strong>
+      React SPA на JavaScript, SCSS, Vite та Git. Компоненти, useState, адаптивний інтерфейс і SPA-логіка.
+      <div class="projects-card-links">
+        <a href="https://olenaboiko9.github.io/arcadenova-frontend-demo/#/" target="_blank" rel="noreferrer">Live</a>
+        <a href="https://github.com/OlenaBoiko9/arcadenova-frontend-demo" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+
+    <div class="projects-card">
+      <strong>Chrome-Ext</strong>
+      Chrome Extension для конвертації USD / UAH. Manifest V3, Monobank API, Chrome Storage API та popup UI.
+      <div class="projects-card-links">
+        <a href="https://github.com/OlenaBoiko9/Chrome-Ext" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+
+    <div class="projects-card">
+      <strong>Daily App</strong>
+      Mobile App на React Native, Expo та TypeScript. Компоненти, useState, навігація між екранами та тестування.
+      <div class="projects-card-links">
+        <a href="https://github.com/OlenaBoiko9/Dayli" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+  </div>
+</article>
+      <article class="level final-level">
+        <div class="panel">
+          <div class="level-label">Final Level — Contact</div>
+          <h2>Я готова до <span class="accent">командної роботи</span></h2>
+          <p>Я готова застосовувати набуті навички у командній роботі над реальними frontend-продуктами та продовжувати професійне зростання.</p>
+          <div class="contacts">
+            <a class="contact-item final-item" href="mailto:boiko.olena.2324ls@gmail.com"><strong>Email</strong>boiko.olena.2324ls@gmail.com</a>
+            <a class="contact-item final-item" href="tel:+380663231808"><strong>Phone</strong>066 323 1808</a>
+            <a class="contact-item final-item" href="https://github.com/OlenaBoiko9" target="_blank" rel="noreferrer"><strong>GitHub</strong>github.com/OlenaBoiko9</a>
+            <a class="contact-item final-item" href="https://t.me/OlenaBoiko9" target="_blank" rel="noreferrer"><strong>Telegram</strong>t.me/OlenaBoiko9</a>
+          </div>
+        </div>
+
+      </article>
+    </section>
+  </main>
+
+  <div class="controls" id="controls">
+    <button type="button" id="prevBtn" aria-label="Попередній рівень">←</button>
+    <span class="hint">Колесо миші / клавіші ← → або A/D</span>
+    <button type="button" id="nextBtn" aria-label="Наступний рівень">→</button>
+  </div>
+<script src="./script.js"></script>
+</body>
+</html>
