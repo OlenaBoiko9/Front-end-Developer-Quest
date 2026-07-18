@@ -226,6 +226,7 @@ button:hover,
   grid-template-columns: minmax(420px, 0.9fr) minmax(460px, 1.1fr);
   align-items: center;
   gap: 24px;
+
 }
 
 .level::after {
@@ -358,7 +359,7 @@ p {
   border-radius: 20px;
   background: var(--panel);
   box-shadow: var(--shadow);
-  padding: 14px;
+  padding: 36px;
   backdrop-filter: blur(16px);
 }
 
@@ -447,7 +448,7 @@ p {
   border: 1px solid rgba(17, 244, 227, 0.18);
   background: rgba(255, 255, 255, 0.04);
   border-radius: 14px;
-  padding: 9px;
+  padding: 40px;
   color: var(--muted);
   font-size: 10.5px;
   line-height: 1.28;
@@ -623,17 +624,6 @@ p {
   opacity: 0.55;
 }
 
-.moon {
-  position: absolute;
-  top: 48px;
-  right: 66px;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  border: 1px solid rgba(17, 244, 227, 0.45);
-  background: rgba(17, 244, 227, 0.14);
-  box-shadow: 0 0 48px rgba(17, 244, 227, 0.28);
-}
 
 .platform {
   position: absolute;
